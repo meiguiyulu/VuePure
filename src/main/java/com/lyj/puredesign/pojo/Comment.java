@@ -53,6 +53,7 @@ public class Comment implements Serializable {
 
     @TableField(exist = false)
     private String nickname;
+
     @TableField(exist = false)
     private String avatarUrl;
 

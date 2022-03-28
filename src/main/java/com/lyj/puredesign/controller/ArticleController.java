@@ -72,7 +72,7 @@ public class ArticleController {
                            @RequestParam Integer pageNum,
                            @RequestParam Integer pageSize) {
         QueryWrapper<Article> queryWrapper = new QueryWrapper<>();
-        queryWrapper.orderByDesc("id");
+        queryWrapper.orderByAsc("id");
         if (StrUtil.isNotBlank(name)) {
             queryWrapper.like("name", name);
         }
